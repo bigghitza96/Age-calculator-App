@@ -81,6 +81,7 @@ input_year.addEventListener('input', (e) => {
         let ageDiff = Date.now() - birthdayObj;
         let ageDate = new Date(ageDiff);
         /* console.log(ageDate); */
+//We need to edit the output result so we cut 1970 in order the result to be right. 
         let ageYears = ageDate.getUTCFullYear() - 1970;
         let ageMonth = ageDate.getUTCMonth();
         let ageDay = ageDate.getUTCDay() - 1;
